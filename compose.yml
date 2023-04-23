@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  nyanbot:
+    build: 
+      context: .
+      dockerfile: ./Dockerfile
+    secrets:
+      - discord_token
+    container_name: nyanbot
+    tty: true
+
+secrets:
+  discord_token:
+    file: ./discord_token.txt
