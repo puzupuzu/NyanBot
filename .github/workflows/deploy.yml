@@ -19,5 +19,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.SSH_PASS }}
           script: |
-            cd ${{ secrets.SERVER_DEPLOY_DIR }}
+            cd /opt/NyanBot/
             git pull origin main
