@@ -17,7 +17,6 @@ jobs:
           username: ${{ secrets.SERVER_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-#          passphrase: ${{ secrets.SSH_PASS }}
           script: |
             cd /opt/NyanBot/
-#            git pull origin main
+            git pull origin main
