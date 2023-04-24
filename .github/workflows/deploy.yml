@@ -20,5 +20,5 @@ jobs:
           script: |
             cd /opt/NyanBot/
             git pull origin main
-            docker compose down
-            docker compose up --build -d
+            docker compose build nyanbot
+            docker compose up --no-deps -d nyanbot
